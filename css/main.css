@@ -23,29 +23,44 @@ button {
 
 .header-bar {
   width: 100%;
-  height: 165px;
+  height: 140px;
   background: rgba(65,72,51,1);
   opacity: 1;
   position: absolute;
   top: 0px;
   left: 0px;
-  overflow: hidden;
   z-index: 1;
 }
+
+.logo {
+  width: 210px;
+  height: 210px;
+  background: url("../images/sip_n_logo_wood.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
 
 .header-buttons {
   position: absolute;
   top: 58px;
-  left: 70%;
+  left: 80%;
 }
 
 .book-now-button {
-  width: 230px;
-  height: 65px;
+  width: 160px;
+  height: 40px;
   background-color: transparent;
   color: rgba(237,224,212,1);
   font-family: 'Source Serif 4', serif;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: SemiBold;
   text-align: center;
   border: 4px solid rgba(237,224,212,1);
@@ -60,6 +75,40 @@ button {
 .book-now-button:hover {
   background-color: rgba(237,224,212,1);
   color: rgba(65,72,51,1);
+}
+
+.tiktok-button {
+  width: 40px;
+  height: 40px;
+  background: url("../images/tiktok.svg");
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: -60px; 
+  top: 0;
+  z-index: 10;
+}
+
+.tiktok-button:hover {
+  opacity: 0.7;
+}
+
+.instagram-button {
+  width: 40px;
+  height: 40px;
+  background: url("../images/instagram.svg");
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: -120px; 
+  top: 0;
+  z-index: 10;
+}
+
+.instagram-button:hover {
+  opacity: 0.7;
 }
 
 .v104_6 {
@@ -115,9 +164,8 @@ button {
   opacity: 1;
   text-align: center;
 }
-.v104_14 {
+.title {
   width: 100%;
-  color: url("../images/v104_14.png");
   position: absolute;
   top: 0px;
   left: 0px;
@@ -125,22 +173,6 @@ button {
   opacity: 1;
   text-align: center;
 }
-.logo {
-  width: 210px;
-  height: 210px;
-  background: url("../images/sip_n_logo_wood.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
-  z-index: 2;
-}
-
 
 .v104_18 {
   width: 100%;
