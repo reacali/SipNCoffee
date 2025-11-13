@@ -11,6 +11,8 @@ body {
   color: rgba(65,72,51,1);
 }
 
+
+
 button {
   font-family: 'Cinzel', serif;
 }
@@ -19,10 +21,6 @@ button {
 .logo {
   width: 150px;
   height: 150px;
-  background: url("../images/sip_n_logo_wood.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   opacity: 1;
   position: absolute;
   top: 45px;
@@ -63,6 +61,7 @@ button {
   align-items: center;
   position: absolute;
   z-index: 10;
+  text-decoration: none;
 }
 
 .book-now-button:hover {
@@ -258,4 +257,103 @@ button {
   z-index: 10;
   color: rgba(237,224,212,1);
   font-size: 14px;
+}
+
+@media (max-width: 800px) {
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    top: 35px;
+  }
+
+  .header-bar {
+    height: 80px;
+  }
+  
+  .header-buttons {
+    position: relative; 
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .socials {
+    display: flex;
+    order: 1;
+  }
+
+  .tiktok-button, .instagram-button {
+    position: static; 
+    margin: 0 5px;
+    left: auto;
+    height: 30px;
+    width: 30px;
+  }
+
+  .book-now-button {
+    position: static;
+    order: 2;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .title-text {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .who-we-are {
+    padding: 10px 1rem;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .image-grid img:nth-child(n+5) {
+    display: none;
+  }
+
+  .center-circle {
+    width: 45vw;
+    height: 45vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  .center-circle h2 {
+    font-size: 3.5vw;
+    margin-bottom: .25rem;
+  }
+
+  .center-circle p {
+    font-size: 1.7vw;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+  .testimonial-container {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 10px;
+  }
 }
