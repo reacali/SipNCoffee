@@ -280,6 +280,7 @@ button {
   height: 100%;
   object-fit: contain;
   background-color: transparent;
+  flex-shrink: 0; 
 }
 
 .dots-container {
