@@ -260,16 +260,25 @@ button {
 }
 
 .carousel-container {
-    height: 80vh;
-    width: auto;
-    overflow: hidden;
-    display: flex;
+  height: 80vh;
+  width: auto;
+  overflow: hidden;
+  display: flex;
 }
 
 .carousel-content {
-    white-space: nowrap; 
-    display: flex; 
-    animation: scroll-left 30s linear infinite; 
+  height: 100%;
+  width: auto;
+  min-width: 100%;
+  white-space: nowrap; 
+  display: flex; 
+  animation: scroll-left 30s linear infinite; 
+}
+
+.carousel-content img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 800px) {
@@ -372,10 +381,10 @@ button {
 }
 
 @keyframes scroll-left {
-    from {
-        transform: translateX(0); 
-    }
-    to {
-        transform: translateX(-100%); 
-    }
+  from {
+      transform: translateX(0); 
+  }
+  to {
+      transform: translateX(-100%); 
+  }
 }
