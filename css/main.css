@@ -259,6 +259,19 @@ button {
   font-size: 14px;
 }
 
+.carousel-container {
+    height: 80vh;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel-content {
+    white-space: nowrap; 
+    display: flex; 
+    animation: scroll-left 30s linear infinite; 
+}
+
 @media (max-width: 800px) {
 
   .logo {
@@ -356,4 +369,13 @@ button {
     grid-template-columns: repeat(1, 1fr);
     font-size: 10px;
   }
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(-100%); 
+    }
 }
