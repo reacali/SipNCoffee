@@ -11,12 +11,9 @@ body {
   color: rgba(65,72,51,1);
 }
 
-
-
 button {
   font-family: 'Cinzel', serif;
 }
-
 
 .logo {
   width: 150px;
@@ -103,7 +100,6 @@ button {
   opacity: 0.7;
 }
 
-
 .title-text {
   width: 100%;
   text-align: center;
@@ -117,7 +113,7 @@ button {
   font-family: 'Cinzel', serif;
   font-weight: bold;
   text-align: center;
-  font-size: 23px;
+  font-size: 20px;
   line-height: .75;
   margin-bottom: 20px;
 }
